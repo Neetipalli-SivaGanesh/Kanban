@@ -1,0 +1,320 @@
+    #sidebar{
+        width: 250px;
+        border-right: 0.01em solid gainsboro ;
+        /* border-right: 0.01em solid rgb(198, 196, 196) ; */
+        background-color: rgb(253, 251, 251);
+        /* line-height: -10px; */
+        float: left;
+        height: 100%;
+    }
+    .sideul{
+        width: inherit;
+        list-style-type: none;
+        line-height: 3rem;
+        overflow: hidden;
+        margin-top: 0cap;
+    }
+   
+    .icon{
+        color: rgb(192, 190, 190);
+        padding-right: 1em;
+    }
+
+    .nav-brand{
+        border-right: 0.01em solid gainsboro ;
+        width: 250px;
+        height: inherit;
+        float:left;
+        flex-basis: 0;
+    }
+    .nav-brand ul li{
+        display: inline-block;
+    }
+
+    .im{
+        border-radius: 50%;
+    padding-top: 1px;
+    }
+    nav{
+        display:inline-flex;
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        gap: 20px;
+        width: 100%;
+        border-bottom: 0.01em solid gainsboro ;
+        margin-top: 5px;
+    }
+
+    .navul{
+        display:inline-flex;
+        gap: 20px;
+        justify-content: end;
+        list-style-type: none;
+        width: inherit;
+    }
+
+    .brand{
+        border-right: 0.01em solid gainsboro ;
+        width: 346px;
+        height: inherit;
+        margin-left: 30px;
+    }
+    h1{
+        color: black;
+        max-width: 253px;
+        width: 100%;
+    }
+    .smallicons{
+        color: blue;
+        background-color: rgba(80, 48, 229, 0.2);
+        border-radius: 5px;
+    }
+   
+    .mobile{
+        display: flex;
+        width: calc(100%-250px);
+        flex-direction: row;
+        justify-content: space-between;
+        padding:30px 30px 0px 30px;
+    }
+    .mobile1{
+        display: flex;
+        align-items: center;
+        max-width: 344px;
+        width: 100%;
+        justify-content:space-between;
+    }
+    .mobile1 div{
+        max-width: 77px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobile1 div .smallicons{
+        max-width: 20px;
+        width: 100%;
+        max-height: 20px;
+        height: 100%;
+    }
+    .mobile2{
+        max-width: 237px;
+        width: 100%;
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mobile21{
+        max-width: 67px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+    }
+    .mobile22{
+        max-width: 158px;
+        width: 100%;
+        display: flex;
+    }
+    .mobile22 img{
+        margin-left: -8px;
+    }
+    .mobile3{
+        max-width: 256px;
+        width:100%;
+        justify-content:space-between;
+        display: flex;
+        padding-bottom: 30px;
+    }
+    .btnn{
+        max-width: 122px;
+        width:100%;
+        justify-content:space-between;
+        display: flex;
+        background-color: white ;
+        border:1px solid rgba(120, 116, 134, 1) ;
+        border-radius: 0.5rem;
+        align-items: center;
+    }
+    .mobile4{
+        display: flex;
+        max-width: 220px;
+        width: 100%;
+        justify-content:space-between;
+        padding-bottom: 30px;
+        align-items: center;
+    }
+    .btnn2{
+        display: flex;
+        max-width: 97px;
+        width: 100%;
+        border-radius: 0.5rem;
+        background-color: white;
+        align-items: center;
+        border:1px solid rgba(120, 116, 134, 1) ;
+        justify-content: space-evenly;
+    }
+    @media  screen and (max-width:768px) {
+        #sidebar{
+            width: 80px;
+            overflow: hidden;
+        }
+        .icon-text{
+            
+            display: none;
+        }
+        .nav-brand{
+            width: 80px;
+        }
+        form{
+            display: none;
+        }
+        .brand{
+            width: 160px;
+        }
+        .nav-options1{
+            display: none;
+        }
+        .mobile{
+            width: calc(100%-80px);
+        }
+    }
+    @media screen and (max-width:600px)
+    {
+        .mobile{
+            flex-direction: column;
+
+        }
+        .mobile1,.mobile2{
+            padding-top: 10px;
+            /* gap: 20px; */
+        }
+        .tasks{
+            flex-direction: column;
+        }
+    }
+    .nosubmit{
+        border: none;
+        padding:0.5rem;
+
+        background-color: rgb(235, 235, 235) ;
+    }
+    .tasks{
+        display: flex;
+        align-items:start;
+        justify-content: space-evenly;
+        /* border: 2px solid black; */
+        padding: 0px 30px 30px 30px;
+    }
+    .todo,.onprogress,.completed{
+        max-width:354px;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 2px solid black; */
+        border-radius: 16px 16px 0px 0px;
+        background-color: #f3f3f3;
+        gap: 10px;
+    }
+    .taskhead{
+        display: flex;
+        justify-content: space-between;
+        width: inherit;
+        align-items: center;
+        max-width: 314px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .task-card1{
+        max-width: 314px;
+        width: 100%;
+        border-radius: 16px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* align-items: center ; */
+        /* height: 255px; */
+        align-items: center;
+    }
+    .t2 {
+        max-width: 281.68px;
+        width: 100%;
+    }
+  .card-head{
+    font-size: 18px;
+    font-weight: 600;
+    color:black;
+    line-height: 21.78px;
+  }
+    .card-diff{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+    }
+    .card-diff button{
+       background-color:  #f9cfe8e7;
+       color: #D58D49;
+       border: none;
+       border-radius: 4px;
+       height:23px;
+        
+    }
+    .card-content{
+       align-items: center;
+       font-size: 12px;
+       font-weight: 400;
+       line-height: 14.52px;
+    }
+    .card-foot{
+        max-width: 278px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card-views{
+        max-width: 168px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .images{
+        max-width: 63px;
+        width: 100%;
+        display: flex;
+    }
+.images img{
+    max-width: 24px;
+    width: 100%;
+    margin-left: -8px;
+}
+.card-views img{
+    max-width: 16px;
+    width: 100%;
+}
+.card-views .span1{
+    font-size: 12px;
+    font-weight: 500;
+    max-width: 77px;
+    width: 100%;
+}
+.card-views .span2{
+    font-size: 12px;
+    font-weight: 500;
+    max-width: 41px;
+    width: 100%;
+}
+.card-img{
+    justify-content: space-between;
+    max-width: 281.56px;
+    width: 100%;
+}
+.card-img img{
+    max-width: 131px;
+    width: 100%;
+}

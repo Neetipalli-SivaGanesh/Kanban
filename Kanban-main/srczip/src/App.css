@@ -1,0 +1,80 @@
+.mysidenav{
+  background-color: rgba(29, 162, 162, 0.849) !important; 
+  color: black;
+}
+.Admin{
+  color:black;
+
+  background-color: rgba(155, 243, 243, 0.849);
+}
+.li1 li::before{
+
+  content: "\2022";
+  color:rgb(173, 255, 47);
+  font-weight: 500;
+  margin-left: -1em;
+  display: inline-block; 
+  width: 8px;
+  height: 8px;
+  font-size: 16px;
+}
+ul li{
+  list-style: none;
+  
+}
+.li2 li::before{
+  content: "\2022";
+  color: orange;
+  font-weight: 500;
+  display: inline-block; 
+  width: 8px;
+  height: 8px;
+  margin-left: -1em;
+  font-size: 16px;
+}
+.li3 li::before{
+  content: "\2022";
+  color: plum;
+  font-weight: 500;
+  margin-left: -1em;
+  width: 8px;
+  height: 8px;
+  display: inline-block; 
+  font-size: 16px;
+}
+.li4 li::before{
+  content: "\2022";
+  color: blue;
+  font-weight: 500;
+  width: 8px;
+  height: 8px;
+  display: inline-block; 
+  margin-left: -1em;
+  font-size:16px;
+}
+.firstcol{
+  background-color: #f3f3f3;
+  margin-left: 10px;
+}
+.secondcol{
+  background-color: #f3f3f3;
+  margin-left: 10px;
+}
+.strength{
+  background-color: rgb(247, 161, 161);
+  border-radius: 6px;
+  color:rgb(239, 112, 112);
+  padding: 5px 8px;
+}
+.title{
+  color: black;
+  font-weight:bold ;
+}
+.navitem{
+  color:rgb(106, 105, 105);
+}
+@media (max-width:800px) {
+  .sd{
+    display: none;
+  }
+}
